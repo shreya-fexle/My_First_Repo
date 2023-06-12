@@ -12,9 +12,12 @@
 
 public class AccountTriggerHandler 
 {    
-    public static void populateRatingField(List<Account> accList){
-        for(Account acc : accList){
-            if(acc.Industry != null && acc.Industry == 'Media'){
+    public static void populateRatingField(List<Account> accList)
+    {
+        for(Account acc : accList)
+        {
+            if(acc.Industry != null && acc.Industry == 'Media')
+            {
                 acc.Rating = 'Hot';
             }
         }
