@@ -11,7 +11,7 @@ This PDF Generator Lightning Web Component (LWC) provides the capability to gene
 - Download Functionality : Automatically generates and downloads the PDF with a timestamped filename.
 
 ### Usage
-- Include the jsPDF library as a static resource in your Salesforce org.
+- Include the jsPDF (jsPDF static resource link) library as a static resource in your Salesforce org.
 - Deploy the Apex class AccountTriggerHandler (link) with the getAccounts method to fetch account records.
 - Deploy the provided LWC code (PdfGeneratorDemo) (link) and add it to a Lightning Page.
 - Click the "Print" button to generate and download the PDF file.
