@@ -12,11 +12,45 @@ This PDF Generator Lightning Web Component (LWC) provides the capability to gene
 
 ### Usage
 - Include the jsPDF library as a static resource in your Salesforce org.
-- Deploy the Apex class [AccountTriggerHandler](https://github.com/shreya-fexle/My_First_Repo/blob/main/AccountTriggerHelper.cls) with the getAccounts method to fetch account records.
-- Deploy the provided LWC code (PdfGeneratorDemo) and add it to a Lightning Page.
+- Deploy the Apex class AccountTriggerHandler (link) with the getAccounts method to fetch account records.
+- Deploy the provided LWC code (PdfGeneratorDemo) (link) and add it to a Lightning Page.
 - Click the "Print" button to generate and download the PDF file.
 
 ### Technical Highlights
 - Table Customization: Supports custom headers, alignment, and styles for better presentation.
 - Dynamic File Naming: Automatically names the downloaded PDF with the current date and time in a user-friendly format.
 - Error Handling: Handles errors gracefully if data retrieval or PDF generation fails.
+
+
+> Table Design - Grid, Plain & Striped
+
+~~~
+let tableHeaderStyle = 'Table Design - Grid, Plain & Striped';
+doc.autoTable({
+    margin: { top: 12, bottom : 10, right : 0 },
+    theme : 'plain',
+    styles:{fontSize:11, halign: 'left', fontWeight: 700},
+    head: [[tableHeaderStyle]]
+})
+
+doc.autoTable({
+    showHead: 'firstPage',
+    theme : 'grid',
+    head: [tableHeader],
+    body: tableBody
+})
+
+doc.autoTable({
+    showHead: 'firstPage',
+    theme : 'plain',
+    head: [tableHeader],
+    body: tableBody
+})
+
+doc.autoTable({
+    showHead: 'firstPage',
+    theme : 'striped',
+    head: [tableHeader],
+    body: tableBody
+})
+~~~
