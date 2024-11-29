@@ -4,7 +4,7 @@ This PDF Generator Lightning Web Component (LWC) provides the capability to gene
 
 ### Features
 - Dynamic Data Fetching : Retrieves Salesforce sobject records via Apex
-- PDF Creation : Utilizes the jsPDF library to generate PDF documents with structured tables and customizable themes (grid, plain, and striped).
+- PDF Creation : Utilizes the jsPDF library to generate PDF documents with structured tables and customizable themes.
 - Table Styles and Layouts :
     1. Demonstrates different table styles for headers and alignment (left, right, center).
     2. Displays text, paragraphs, and styled normal text within the document.
