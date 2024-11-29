@@ -54,3 +54,39 @@ doc.autoTable({
     body: tableBody
 })
 ~~~
+
+> #### Table Design - Grid, Plain & Striped
+
+~~~
+let headerHeading = 'Headers Different Alignment View';
+doc.autoTable({
+    margin: { top: 12, right : 0 },
+    theme : 'plain',
+    styles:{fontSize:11, halign: 'left', fontWeight: 700},
+    head: [[headerHeading]]
+})
+
+let leftHeader = 'LeftHeader';
+doc.autoTable({
+    margin: { top: 12, right : 20 },
+    theme : 'striped',
+    styles:{fontSize:11, halign: 'left', fontWeight: 700},
+    head: [[leftHeader]]
+})
+
+let rightHeader = 'RightHeader';
+doc.autoTable({
+    margin: { bottom: 0, right : 20 },
+    theme : 'grid',
+    styles:{fontSize:11, halign: 'right', fontWeight: 600},
+    head: [[rightHeader]]
+})
+
+let centerHeader = 'CenterHeader';
+doc.autoTable({
+    margin: { bottom: 0, right : 20 },
+    theme : 'striped',
+    styles:{fontSize:11, halign: 'center', fontWeight: 600},
+    head: [[centerHeader]]
+})
+~~~
