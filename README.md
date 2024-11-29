@@ -12,7 +12,7 @@ This PDF Generator Lightning Web Component (LWC) provides the capability to gene
 
 ### Usage
 - Include the jsPDF library as a static resource in your Salesforce org.
-- Deploy the Apex class AccountController with the getAccounts method to fetch account records.
+- Deploy the Apex class [AccountTriggerHandler](https://github.com/shreya-fexle/My_First_Repo/blob/main/AccountTriggerHelper.cls) with the getAccounts method to fetch account records.
 - Deploy the provided LWC code (PdfGeneratorDemo) and add it to a Lightning Page.
 - Click the "Print" button to generate and download the PDF file.
 
