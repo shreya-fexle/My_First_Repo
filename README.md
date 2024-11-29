@@ -22,7 +22,7 @@ This PDF Generator Lightning Web Component (LWC) provides the capability to gene
 - Error Handling: Handles errors gracefully if data retrieval or PDF generation fails.
 
 
-> Table Design - Grid, Plain & Striped
+> #### Table Design - Grid, Plain & Striped
 
 ~~~
 let tableHeaderStyle = 'Table Design - Grid, Plain & Striped';
