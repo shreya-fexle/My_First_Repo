@@ -90,3 +90,35 @@ doc.autoTable({
     head: [[centerHeader]]
 })
 ~~~
+
+> #### Paragraph View with italic style
+
+~~~
+let paragraphHeading = 'Paragraph View';
+doc.autoTable({
+    margin: { top: 12, bottom : 10, right : 0 },
+    theme : 'plain',
+    styles:{fontSize:11, halign: 'left', fontWeight: 700},
+    head: [[paragraphHeading]]
+})
+
+let paragraph = 'Salesforce Inc. is a cloud computing and social enterprise software-as-a-service (SaaS) provider based in San Francisco. Founded in March 1999 by former Oracle executive Marc Benioff, Parker Harris, Dave Moellenhoff and Frank Dominguez, the company started off as a customer relationship management (CRM) platform vendor.';
+doc.autoTable({
+    margin: { bottom: 0, right : 20 },
+    theme : 'plain',
+    styles:{fontSize:11, halign: 'center', fontWeight: 600, fontStyle: 'italic'},
+    head: [[paragraph]]
+})
+~~~
+
+> #### Normal text with highlighted background
+
+~~~
+let normalText = 'Normal Text For Testing';
+doc.autoTable({
+    margin: { bottom: 0, right : 20 },
+    theme : 'plain',
+    styles:{fontSize:11, halign: 'center', fontWeight: 600, fillColor: [180, 180, 180]},
+    head: [[normalText]]
+})
+~~~
