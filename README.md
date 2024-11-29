@@ -55,7 +55,7 @@ doc.autoTable({
 })
 ~~~
 
-> #### Table Design - Grid, Plain & Striped
+> #### Headers Different Alignment View
 
 ~~~
 let headerHeading = 'Headers Different Alignment View';
