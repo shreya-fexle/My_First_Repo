@@ -1,4 +1,4 @@
-# PDF Generator LWC Component
+# PDF Generator
 
 This PDF Generator Lightning Web Component (LWC) provides the capability to generate customized PDF files dynamically using the jsPDF library. It retrieves data from Salesforce using Apex, formats it into tables, and offers multiple styles and layouts for enhanced readability.
 
