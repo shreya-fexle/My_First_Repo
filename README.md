@@ -24,29 +24,28 @@ This PDF Generator Lightning Web Component (LWC) provides the capability to gene
 
 > #### Table Design - Grid, Plain & Striped
 
+###### Grid View Table
 ~~~
-let tableHeaderStyle = 'Table Design - Grid, Plain & Striped';
-doc.autoTable({
-    margin: { top: 12, bottom : 10, right : 0 },
-    theme : 'plain',
-    styles:{fontSize:11, halign: 'left', fontWeight: 700},
-    head: [[tableHeaderStyle]]
-})
-
 doc.autoTable({
     showHead: 'firstPage',
     theme : 'grid',
     head: [tableHeader],
     body: tableBody
 })
+~~~
 
+###### Plain View Table
+~~~
 doc.autoTable({
     showHead: 'firstPage',
     theme : 'plain',
     head: [tableHeader],
     body: tableBody
 })
+~~~
 
+###### Striped View Tablw
+~~~
 doc.autoTable({
     showHead: 'firstPage',
     theme : 'striped',
