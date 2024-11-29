@@ -57,15 +57,8 @@ doc.autoTable({
 
 > #### Headers Different Alignment View
 
+###### Left Aligned Header
 ~~~
-let headerHeading = 'Headers Different Alignment View';
-doc.autoTable({
-    margin: { top: 12, right : 0 },
-    theme : 'plain',
-    styles:{fontSize:11, halign: 'left', fontWeight: 700},
-    head: [[headerHeading]]
-})
-
 let leftHeader = 'LeftHeader';
 doc.autoTable({
     margin: { top: 12, right : 20 },
@@ -73,7 +66,10 @@ doc.autoTable({
     styles:{fontSize:11, halign: 'left', fontWeight: 700},
     head: [[leftHeader]]
 })
+~~~
 
+###### Right Aligned Header
+~~~
 let rightHeader = 'RightHeader';
 doc.autoTable({
     margin: { bottom: 0, right : 20 },
@@ -81,7 +77,10 @@ doc.autoTable({
     styles:{fontSize:11, halign: 'right', fontWeight: 600},
     head: [[rightHeader]]
 })
+~~~
 
+###### Center Aligned Header
+~~~
 let centerHeader = 'CenterHeader';
 doc.autoTable({
     margin: { bottom: 0, right : 20 },
@@ -94,14 +93,6 @@ doc.autoTable({
 > #### Paragraph View with italic style
 
 ~~~
-let paragraphHeading = 'Paragraph View';
-doc.autoTable({
-    margin: { top: 12, bottom : 10, right : 0 },
-    theme : 'plain',
-    styles:{fontSize:11, halign: 'left', fontWeight: 700},
-    head: [[paragraphHeading]]
-})
-
 let paragraph = 'Salesforce Inc. is a cloud computing and social enterprise software-as-a-service (SaaS) provider based in San Francisco. Founded in March 1999 by former Oracle executive Marc Benioff, Parker Harris, Dave Moellenhoff and Frank Dominguez, the company started off as a customer relationship management (CRM) platform vendor.';
 doc.autoTable({
     margin: { bottom: 0, right : 20 },
