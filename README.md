@@ -9,3 +9,14 @@ This PDF Generator Lightning Web Component (LWC) provides the capability to gene
     1. Demonstrates different table styles for headers and alignment (left, right, center).
     2. Displays text, paragraphs, and styled normal text within the document.
 - Download Functionality : Automatically generates and downloads the PDF with a timestamped filename.
+
+### Usage
+- Include the jsPDF library as a static resource in your Salesforce org.
+- Deploy the Apex class AccountController with the getAccounts method to fetch account records.
+- Deploy the provided LWC code (PdfGeneratorDemo) and add it to a Lightning Page.
+- Click the "Print" button to generate and download the PDF file.
+
+### Technical Highlights
+- Table Customization: Supports custom headers, alignment, and styles for better presentation.
+- Dynamic File Naming: Automatically names the downloaded PDF with the current date and time in a user-friendly format.
+- Error Handling: Handles errors gracefully if data retrieval or PDF generation fails.
